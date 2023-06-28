@@ -1,11 +1,8 @@
 
 import './App.css'
 import Stars from './components/Stars'
+import { Counts } from './components/Counts'
 
-type Counts = {
-  count: number,
-  name: string
-}
 type CountsProp = {
   rating: Counts
 }
