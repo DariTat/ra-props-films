@@ -2,11 +2,12 @@ import Star from "./Star";
 import React from "react";
 import { Counts } from './Counts'
 
+type CountsProp = {
+  rating: Counts
+}
 
-export default function Stars({rating}) {
-    type CountsProp = {
-      rating: Counts
-    }
+export default function Stars({rating}: CountsProp) {
+   
     let star: string[] ;
     if (rating.count > 0 && rating.count < 6) {
       star = Array(rating.count).fill('star');
